@@ -61,10 +61,13 @@ public class DragAndDrop_ : MonoBehaviour
             Vector3 MousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             SelectedPiece.transform.position = new Vector3(MousePoint.x,MousePoint.y,0) - diff;
         }             
-        /*if (PlacedPieces == 36)
+        
+        if (PlacedPieces == 5)
         {
-            EndMenu.SetActive(true);
-        }*/
+            FindObjectOfType<AudioManager>().PlayDelayed("victory", .2f);
+            Destroy(this);
+            //EndMenu.SetActive(true);
+        }
     }
 
     internal void PieceFit()

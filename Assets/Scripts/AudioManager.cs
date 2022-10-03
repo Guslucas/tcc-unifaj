@@ -31,12 +31,12 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        Play("victory");
+        //Play("theme");
     }
 
 
 
-    public void Play(string name)
+    public void PlayDelayed(string name, float delay = 0f)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         if (s == null)
@@ -45,7 +45,12 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        s.source.Play();
+        s.source.PlayDelayed(delay);
+    }
+
+    public void Play(string name)
+    {
+        PlayDelayed(name);
     }
 
     // For default values
