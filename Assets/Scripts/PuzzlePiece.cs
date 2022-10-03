@@ -27,7 +27,7 @@ public class PuzzlePiece : MonoBehaviour
                     transform.position = RightPosition;
                     InRightPosition = true;
                     GetComponent<SortingGroup>().sortingOrder = 0;
-                    Camera.main.GetComponent<DragAndDrop_>().PlacedPieces++;
+                    Camera.main.GetComponent<DragAndDrop_>().PieceFit();
                 }
             }
         }

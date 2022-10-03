@@ -1,8 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
+
 public class DragAndDrop_ : MonoBehaviour
 {
     //public Sprite[] Levels;
@@ -13,6 +16,9 @@ public class DragAndDrop_ : MonoBehaviour
     public int PlacedPieces = 0;
     private Vector3 diff;
 
+
+    public AudioSource audioSource;
+    public AudioClip[] fitPieceSounds;
     void Start()
     {
         //for (int i = 0;i < 36; i++)
@@ -60,14 +66,22 @@ public class DragAndDrop_ : MonoBehaviour
             EndMenu.SetActive(true);
         }*/
     }
-    /*public void NextLevel()
+
+    internal void PieceFit()
     {
-        PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level")+1);
-        SceneManager.LoadScene("Game");
+        PlacedPieces++;
+        audioSource.clip = fitPieceSounds[Random.Range(0, fitPieceSounds.Length)];
+        audioSource.Play();
     }
 
-    public void BacktoMenu()
-    {
-        SceneManager.LoadScene("Menu");
-    }*/
+    /*public void NextLevel()
+{
+   PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level")+1);
+   SceneManager.LoadScene("Game");
+}
+
+public void BacktoMenu()
+{
+   SceneManager.LoadScene("Menu");
+}*/
 }
