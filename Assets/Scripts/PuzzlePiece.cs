@@ -8,9 +8,28 @@ public class PuzzlePiece : MonoBehaviour
     private Vector3 RightPosition;
     public bool InRightPosition;
     public bool Selected;
+
+    private const bool CreateShadows = true;
+    private static GameObject ShadowsParent;
+
     void Start()
     {
         RightPosition = transform.position;
+
+        if (CreateShadows)
+        {
+            if (ShadowsParent == null)
+                ShadowsParent = GameObject.Find("Shadows");
+            Debug.Log("Creating shadow for " + name);
+            GameObject shadow = new GameObject(name + "_shadow");
+            shadow.transform.SetParent(ShadowsParent.transform);
+            shadow.transform.position = transform.position;
+            SpriteRenderer shadowSpriteRenderer = shadow.AddComponent<SpriteRenderer>();
+            shadowSpriteRenderer.color = new Color(0, 0, 0, .46f);
+            shadowSpriteRenderer.sprite = GetComponent<SpriteRenderer>().sprite;
+            shadowSpriteRenderer.sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
+        }
+
         transform.position = new Vector3(Random.Range(-9.28f, 9.25f), Random.Range(0.23f, -4.46f));
     }
     
