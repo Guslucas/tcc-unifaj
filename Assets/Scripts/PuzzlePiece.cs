@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -8,6 +9,8 @@ public class PuzzlePiece : MonoBehaviour
     private Vector3 RightPosition;
     public bool InRightPosition;
     public bool Selected;
+
+    private static int i = 0;
 
     private const bool CreateShadows = true;
     private static GameObject ShadowsParent;
@@ -30,7 +33,11 @@ public class PuzzlePiece : MonoBehaviour
             shadowSpriteRenderer.sortingOrder = GetComponent<SpriteRenderer>().sortingOrder - 1;
         }
 
-        transform.position = new Vector3(Random.Range(-9.28f, 9.25f), Random.Range(0.23f, -4.46f));
+        //transform.position = new Vector3(Random.Range(-9.28f, 9.25f), Random.Range(0.23f, -4.46f));
+
+        transform.position = new Vector3(-8.03f + (1.92f * i), -0.86f);
+
+        i++;
     }
     
     void Update()
