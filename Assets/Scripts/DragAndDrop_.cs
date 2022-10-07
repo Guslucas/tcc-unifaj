@@ -16,9 +16,6 @@ public class DragAndDrop_ : MonoBehaviour
     public int PlacedPieces = 0;
     private Vector3 diff;
 
-
-    public AudioSource audioSource;
-    public AudioClip[] fitPieceSounds;
     void Start()
     {
         //for (int i = 0;i < 36; i++)
@@ -73,8 +70,7 @@ public class DragAndDrop_ : MonoBehaviour
     internal void PieceFit()
     {
         PlacedPieces++;
-        audioSource.clip = fitPieceSounds[Random.Range(0, fitPieceSounds.Length)];
-        audioSource.Play();
+        FindObjectOfType<AudioManager>().Play("click6");
     }
 
     /*public void NextLevel()
