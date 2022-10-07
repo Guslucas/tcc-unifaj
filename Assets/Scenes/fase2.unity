@@ -687,7 +687,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 21300000, guid: f2768b0d7eaf90f4aba1501413f9f030, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -899,7 +899,7 @@ SortingGroup:
   m_GameObject: {fileID: 426485354}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &519420028
 GameObject:
@@ -1278,7 +1278,7 @@ SortingGroup:
   m_GameObject: {fileID: 537857838}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &591953870
 GameObject:
@@ -1590,7 +1590,7 @@ SortingGroup:
   m_GameObject: {fileID: 665628999}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &701260585
 GameObject:
@@ -2032,7 +2032,7 @@ SortingGroup:
   m_GameObject: {fileID: 744539829}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &827243185
 GameObject:
@@ -2220,7 +2220,7 @@ SortingGroup:
   m_GameObject: {fileID: 827243185}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &871008460
 GameObject:
@@ -2502,7 +2502,7 @@ SortingGroup:
   m_GameObject: {fileID: 929046688}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &959253621
 GameObject:
@@ -2690,7 +2690,7 @@ SortingGroup:
   m_GameObject: {fileID: 959253621}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &1003511719
 GameObject:
@@ -2878,7 +2878,7 @@ SortingGroup:
   m_GameObject: {fileID: 1003511719}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &1072179847
 GameObject:
@@ -3066,7 +3066,7 @@ SortingGroup:
   m_GameObject: {fileID: 1072179847}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &1075191557
 GameObject:
@@ -3218,7 +3218,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: bb2fc0511c767ed4aafe146b3f246eda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3524,7 +3524,7 @@ SortingGroup:
   m_GameObject: {fileID: 1220094603}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &1380639877
 GameObject:
@@ -3806,7 +3806,7 @@ SortingGroup:
   m_GameObject: {fileID: 1432597762}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &1542583326
 GameObject:
@@ -3994,7 +3994,7 @@ SortingGroup:
   m_GameObject: {fileID: 1542583326}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &1622855820
 GameObject:
@@ -4182,7 +4182,7 @@ SortingGroup:
   m_GameObject: {fileID: 1622855820}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &1636995072
 GameObject:
@@ -4219,7 +4219,7 @@ MonoBehaviour:
   cenafase1: 
   cenafase2: 
   cenafase3: 
-  inicial: Menu
+  inicial: MenuQBC
   menu: 
 --- !u!114 &1636995074
 MonoBehaviour:
@@ -4488,7 +4488,7 @@ SortingGroup:
   m_GameObject: {fileID: 1660237633}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &1746883741
 GameObject:
@@ -5052,7 +5052,7 @@ SortingGroup:
   m_GameObject: {fileID: 1952350624}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!1 &2066960503
 GameObject:
@@ -5245,5 +5245,5 @@ SortingGroup:
   m_GameObject: {fileID: 2066960503}
   m_Enabled: 1
   m_SortingLayerID: 1157934233
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0

@@ -19,7 +19,7 @@ public class DropAndDrown : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
             {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.transform.CompareTag("Puzzle"))
+            if (hit && hit.transform.CompareTag("Puzzle"))
             {
                if (!hit.transform.GetComponent<piceseScript>().InRightPosition)
                 {
