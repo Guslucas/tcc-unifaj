@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class FindGameMark : MonoBehaviour
 {
-    AudioManager AudioManager;
-
     private void OnMouseDown()
     {
-        Debug.Log("Erro selecionado");
+        //Debug.Log("Erro selecionado");
+        FindObjectOfType<AudioManager>().Play("SelectedError");
+
 
         Destroy(this.gameObject);
 
