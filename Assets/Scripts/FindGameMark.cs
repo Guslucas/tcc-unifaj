@@ -6,6 +6,8 @@ public class FindGameMark : MonoBehaviour
 {
     AudioManager audioManager;
     FindGameManager gameManager;
+    public GameObject x;
+    
     private void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
@@ -21,5 +23,7 @@ public class FindGameMark : MonoBehaviour
         gameManager.EndGame(1);
 
         Destroy(this.gameObject);
+
+        Instantiate(x, transform.position, x.transform.rotation);
     }
 }
