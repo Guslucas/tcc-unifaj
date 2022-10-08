@@ -1,22 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class FindGameManager : MonoBehaviour
 {
     AudioManager audioManager;
+    public Text scoreText;
+
+    int points = 0;
 
     private void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
+        scoreText = FindObjectOfType<Text>();
     }
 
-    int count = 14;
-    public void EndGame(int aux)
+    public void GetPoints(int aux)
     {
-        count -= aux;
+        points += aux;
+        scoreText.text = "Pontos: " + points;
         //Debug.Log(count);
-        if (count == 0)
+        if (points == 15)
         {
             Debug.Log("Encontrou todos os erros!!!");
             audioManager.Play("Win");

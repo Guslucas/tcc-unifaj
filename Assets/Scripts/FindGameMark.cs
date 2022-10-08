@@ -21,7 +21,7 @@ public class FindGameMark : MonoBehaviour
 
         audioManager.Play("SelectedError");
 
-        gameManager.EndGame(1);
+        gameManager.GetPoints(1);
 
         Destroy(this.gameObject);
 
