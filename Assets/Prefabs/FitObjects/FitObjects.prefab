@@ -1101,12 +1101,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4887734817901975262}
   m_Layer: 0
-  m_Name: Pieces
+  m_Name: Pieces_bkp1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4887734817901975262
 Transform:
   m_ObjectHideFlags: 0
@@ -1835,7 +1835,7 @@ GameObject:
   - component: {fileID: 4719528371476316376}
   - component: {fileID: 4719528371476316383}
   m_Layer: 0
-  m_Name: Pieces_bkp
+  m_Name: Pieces_bkp2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

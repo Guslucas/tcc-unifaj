@@ -16,6 +16,8 @@ public class DragAndDrop_ : MonoBehaviour
     public int PlacedPieces = 0;
     private Vector3 diff;
 
+    public int pieceQuantity;
+
     void Start()
     {
         //for (int i = 0;i < 36; i++)
@@ -59,7 +61,7 @@ public class DragAndDrop_ : MonoBehaviour
             SelectedPiece.transform.position = new Vector3(MousePoint.x,MousePoint.y,0) - diff;
         }             
         
-        if (PlacedPieces == 5)
+        if (PlacedPieces == pieceQuantity)
         {
             FindObjectOfType<AudioManager>().PlayDelayed("victory", .2f);
             Destroy(this);
