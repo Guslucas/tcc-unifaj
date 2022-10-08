@@ -63,7 +63,7 @@ public class DragAndDrop_ : MonoBehaviour
         
         if (PlacedPieces == pieceQuantity)
         {
-            FindObjectOfType<AudioManager>().PlayDelayed("victory", .2f);
+            FindObjectOfType<AudioManager>().PlayDelayed("victory");
             Destroy(this);
             //EndMenu.SetActive(true);
         }
