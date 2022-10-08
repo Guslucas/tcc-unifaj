@@ -58,4 +58,9 @@ public class PuzzlePiece : MonoBehaviour
             }
         }
     }
+
+    private void OnDestroy()
+    {
+        i = 0;
+    }
 }

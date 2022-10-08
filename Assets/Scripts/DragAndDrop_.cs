@@ -17,6 +17,9 @@ public class DragAndDrop_ : MonoBehaviour
     private Vector3 diff;
 
     public int pieceQuantity;
+    
+    public string NextLevelScene;
+    public string HomeScene;
 
     void Start()
     {
@@ -85,4 +88,20 @@ public void BacktoMenu()
 {
    SceneManager.LoadScene("Menu");
 }*/
+
+    public void OnNextLevelButtonClicked()
+    {
+        SceneManager.LoadScene(NextLevelScene);
+    }
+
+    public void OnRestartButtonClicked()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void OnHomeButtonClicked()
+    {
+        SceneManager.LoadScene(HomeScene);
+    }
+    
 }
