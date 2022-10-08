@@ -15,7 +15,7 @@ public class FindGameManager : MonoBehaviour
     public void EndGame(int aux)
     {
         count -= aux;
-        Debug.Log(count);
+        //Debug.Log(count);
         if (count == 0)
         {
             Debug.Log("Encontrou todos os erros!!!");

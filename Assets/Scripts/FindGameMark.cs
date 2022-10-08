@@ -6,6 +6,7 @@ public class FindGameMark : MonoBehaviour
 {
     AudioManager audioManager;
     FindGameManager gameManager;
+
     public GameObject x;
     
     private void Start()
@@ -16,7 +17,7 @@ public class FindGameMark : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Erro selecionado");
+        //Debug.Log("Erro selecionado");
 
         audioManager.Play("SelectedError");
 
