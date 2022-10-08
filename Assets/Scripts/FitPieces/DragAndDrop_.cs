@@ -17,6 +17,9 @@ public class DragAndDrop_ : MonoBehaviour
     private Vector3 diff;
 
     public int pieceQuantity;
+    
+    public string NextLevelScene;
+    public string HomeScene;
 
     void Start()
     {
@@ -63,7 +66,7 @@ public class DragAndDrop_ : MonoBehaviour
         
         if (PlacedPieces == pieceQuantity)
         {
-            FindObjectOfType<AudioManager>().PlayDelayed("victory", .2f);
+            FindObjectOfType<AudioManager>().PlayDelayed("victory");
             Destroy(this);
             //EndMenu.SetActive(true);
         }
@@ -85,4 +88,20 @@ public void BacktoMenu()
 {
    SceneManager.LoadScene("Menu");
 }*/
+
+    public void OnNextLevelButtonClicked()
+    {
+        SceneManager.LoadScene(NextLevelScene);
+    }
+
+    public void OnRestartButtonClicked()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void OnHomeButtonClicked()
+    {
+        SceneManager.LoadScene(HomeScene);
+    }
+    
 }
