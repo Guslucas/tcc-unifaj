@@ -13,9 +13,11 @@ public class GameManager : IPersistentSingleton<GameManager>
     public string cena;
     private string _currentScene;
 
+    public GameObject EndingDialog;
+
     private void Start()
     {
-        
+
     }
 
     private void Update()
@@ -42,7 +44,27 @@ public class GameManager : IPersistentSingleton<GameManager>
         OnLoadedSceneComplete?.Invoke(_currentScene);
     }
 
+    public void SetAndHideEndingDialog()
+    {
+        //GameObject newEndingDialog
+        //EndingDialog = newEndingDialog;
+        EndingDialog = GameObject.Find("FinishedLevelDialog");
+        Debug.Log("EndingDialog=" + EndingDialog);
+        Instace.HideEndingDialog();
+    }
 
-  
-    
+    public void ShowEndingDialog()
+    {
+        if (EndingDialog == null)
+            return;
+        EndingDialog.SetActive(true);
+    }
+
+    public void HideEndingDialog()
+    {
+        if (EndingDialog == null)
+            return;
+        EndingDialog.SetActive(false);
+    }
+
 }
