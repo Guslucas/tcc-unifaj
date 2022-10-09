@@ -8,6 +8,11 @@ public class FinishedLevelDialogConfig : MonoBehaviour
     public string NextLevelScene;
     public string HomeScene;
 
+    private void Start()
+    {
+        GameManager.Instace.SetAndHideEndingDialog();
+    }
+
     public void OnNextLevelButtonClicked()
     {
         SceneManager.LoadScene(NextLevelScene);
