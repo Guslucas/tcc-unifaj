@@ -44,11 +44,11 @@ public class GameManager : IPersistentSingleton<GameManager>
         OnLoadedSceneComplete?.Invoke(_currentScene);
     }
 
-    public void SetAndHideEndingDialog()
+    public void SetAndHideEndingDialog(GameObject newEndingDialog)
     {
         //GameObject newEndingDialog
-        //EndingDialog = newEndingDialog;
-        EndingDialog = GameObject.Find("FinishedLevelDialog");
+        EndingDialog = newEndingDialog;
+        //EndingDialog = GameObject.Find("FinishedLevelDialog");
         Debug.Log("EndingDialog=" + EndingDialog);
         Instace.HideEndingDialog();
     }

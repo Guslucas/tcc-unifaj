@@ -24,8 +24,6 @@ public class DragAndDrop_ : MonoBehaviour
         //{
         //    GameObject.Find("Piece (" + i + ")").transform.Find("Puzzle").GetComponent<SpriteRenderer>().sprite = Levels[PlayerPrefs.GetInt("Level")];
         //}
-
-        GameManager.Instace.SetAndHideEndingDialog();
     }
 
     void Update()

@@ -10,7 +10,7 @@ public class FinishedLevelDialogConfig : MonoBehaviour
 
     private void Start()
     {
-        GameManager.Instace.SetAndHideEndingDialog();
+        GameManager.Instace.SetAndHideEndingDialog(gameObject);
     }
 
     public void OnNextLevelButtonClicked()
