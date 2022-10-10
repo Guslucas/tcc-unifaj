@@ -56,7 +56,10 @@ public class DropAndDrown : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().PlayDelayed("victory");
             Victory.SetActive(true);
-        }
+
+            Time.timeScale = 1f;
+            PlacedPieces = 0;
+}
 
     }
  
