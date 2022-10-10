@@ -55,7 +55,8 @@ public class DropAndDrown : MonoBehaviour
         if (PlacedPieces == pieceQuantity)
         {
             FindObjectOfType<AudioManager>().PlayDelayed("victory");
-            Victory.SetActive(true);
+            GameManager.Instace.ShowEndingDialog();
+           // Victory.SetActive(true);
 
             Time.timeScale = 1f;
             PlacedPieces = 0;
