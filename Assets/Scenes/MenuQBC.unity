@@ -974,9 +974,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196b0a5b977c6214397ebd517bec805f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenafase1: fase1
-  cenafase2: fase2
-  cenafase3: fase3
+  cenafase1: 
+  cenafase2: MEQBC
+  cenafase3: 
   inicial: MenuQBC
   menu: game
 --- !u!1 &1551781328
