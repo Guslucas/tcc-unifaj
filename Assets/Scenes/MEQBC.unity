@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0641d6ebaf43b44bc0e59418f38ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cena: MenuQBC
+  cena: game
 --- !u!114 &2091342278
 MonoBehaviour:
   m_ObjectHideFlags: 0
