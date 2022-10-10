@@ -28,6 +28,7 @@ public class piceseScript : MonoBehaviour
                     transform.position = RightPosition;
                     InRightPosition = true;
                     GetComponent<SortingGroup>().sortingOrder = 0;
+                    Camera.main.GetComponent<DropAndDrown>().PieceFit();
                 }
             }
         }
