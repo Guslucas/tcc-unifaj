@@ -16,9 +16,11 @@ public class DragAndDrop_ : MonoBehaviour
     public int PlacedPieces = 0;
     private Vector3 diff;
 
+    public int pieceQuantity;
+    
+    public string NextLevelScene;
+    public string HomeScene;
 
-    public AudioSource audioSource;
-    public AudioClip[] fitPieceSounds;
     void Start()
     {
         //for (int i = 0;i < 36; i++)
@@ -62,9 +64,9 @@ public class DragAndDrop_ : MonoBehaviour
             SelectedPiece.transform.position = new Vector3(MousePoint.x,MousePoint.y,0) - diff;
         }             
         
-        if (PlacedPieces == 5)
+        if (PlacedPieces == pieceQuantity)
         {
-            FindObjectOfType<AudioManager>().PlayDelayed("victory", .2f);
+            FindObjectOfType<AudioManager>().PlayDelayed("victory");
             Destroy(this);
             //EndMenu.SetActive(true);
         }
@@ -73,8 +75,7 @@ public class DragAndDrop_ : MonoBehaviour
     internal void PieceFit()
     {
         PlacedPieces++;
-        audioSource.clip = fitPieceSounds[Random.Range(0, fitPieceSounds.Length)];
-        audioSource.Play();
+        FindObjectOfType<AudioManager>().Play("click6");
     }
 
     /*public void NextLevel()
@@ -87,4 +88,20 @@ public void BacktoMenu()
 {
    SceneManager.LoadScene("Menu");
 }*/
+
+    public void OnNextLevelButtonClicked()
+    {
+        SceneManager.LoadScene(NextLevelScene);
+    }
+
+    public void OnRestartButtonClicked()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void OnHomeButtonClicked()
+    {
+        SceneManager.LoadScene(HomeScene);
+    }
+    
 }
