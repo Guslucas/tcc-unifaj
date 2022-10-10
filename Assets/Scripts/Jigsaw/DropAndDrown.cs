@@ -55,15 +55,12 @@ public class DropAndDrown : MonoBehaviour
         if (PlacedPieces == pieceQuantity)
         {
             FindObjectOfType<AudioManager>().PlayDelayed("victory");
-            victory();
+            Victory.SetActive(true);
         }
 
     }
  
-    public void victory()
-    {
-        Victory.SetActive(true);
-    }
+   
     internal void PieceFit()
     {
         PlacedPieces++;
