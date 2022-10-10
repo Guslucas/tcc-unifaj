@@ -8,7 +8,7 @@ public class FindGameManager : MonoBehaviour
     AudioManager audioManager;
     public Text scoreText;
 
-    int points = 0;
+    public int errosNoDesenho = 0;
 
     private void Start()
     {
@@ -16,14 +16,15 @@ public class FindGameManager : MonoBehaviour
         scoreText = FindObjectOfType<Text>();
     }
 
-    public void GetPoints(int aux)
+    public void GetPoints(int errosEcontrados)
     {
-        points += aux;
-        scoreText.text = "Pontos: " + points;
+        errosNoDesenho = errosNoDesenho -  errosEcontrados;
+        scoreText.text = "     Erros a serem encontrados: " + errosNoDesenho;
         //Debug.Log(count);
-        if (points == 15)
+        if (errosNoDesenho == 0)
         {
             Debug.Log("Encontrou todos os erros!!!");
+            scoreText.text = "   Parabéns! você encontrou todos os erros!";
             audioManager.Play("Win");
         }        
     }
