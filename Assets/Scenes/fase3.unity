@@ -2250,11 +2250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1622949993773239482, guid: c630b941579ab814681f1ec980babee7, type: 3}
       propertyPath: NextLevelScene
-      value: MEQBC
+      value: game
       objectReference: {fileID: 0}
     - target: {fileID: 1622949993773239487, guid: c630b941579ab814681f1ec980babee7, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5211149219878520559, guid: c630b941579ab814681f1ec980babee7, type: 3}
       propertyPath: m_IsActive
