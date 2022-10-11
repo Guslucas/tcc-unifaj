@@ -852,7 +852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 338e945b5a1dcbe4eadf01b823947e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cenafase1: 
+  cenafase1: AnimalPuzzle_LevelSelect
   cenafase2: MEQBC
   cenafase3: 
 --- !u!114 &1271174278
