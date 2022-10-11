@@ -445,7 +445,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7357934049457862881, guid: a688bd5a802d3c44aa7a0e7305f725c9, type: 3}
       propertyPath: m_Name
-      value: LevelSelect
+      value: CommonLevelSelect
       objectReference: {fileID: 0}
     - target: {fileID: 7357934049457862884, guid: a688bd5a802d3c44aa7a0e7305f725c9, type: 3}
       propertyPath: cenafase1
