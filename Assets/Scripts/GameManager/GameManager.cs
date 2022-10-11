@@ -10,6 +10,7 @@ public class GameManager : IPersistentSingleton<GameManager>
 {
     public Transform currentCheckPoint;
     public Action<string> OnLoadedSceneComplete;
+
     public string cena;
     private string _currentScene;
 

@@ -11,6 +11,13 @@ public class MenuTrocaFase : MonoBehaviour
     public string cenafase3;
     public string inicial;
     public string menu;
+    public GameObject EndingDialog;
+
+    private void Start()
+    {
+        GameManager.Instace.SetAndHideEndingDialog(EndingDialog);
+    }
+
     public void fase1()
     {
         SceneManager.LoadScene(cenafase1);

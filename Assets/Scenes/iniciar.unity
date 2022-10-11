@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCheckPoint: {fileID: 0}
   cena: 
-  EndingDialog: {fileID: 8337556312297310050, guid: 8c1eccba18fc24f4f85a6f4453cb40d4, type: 3}
+  EndingDialog: {fileID: 0}
 --- !u!4 &1633655048
 Transform:
   m_ObjectHideFlags: 0
