@@ -42,8 +42,8 @@ public class PuzzlePiece : MonoBehaviour
     
     void Update()
     {
-        if (Selected)
-            Debug.Log("Distance from right position: " + Vector3.Distance(transform.position, RightPosition));
+        //if (Selected)
+            //Debug.Log("Distance from right position: " + Vector3.Distance(transform.position, RightPosition));
         if (Vector3.Distance(transform.position, RightPosition) < .5f)
         {
             if (!Selected)

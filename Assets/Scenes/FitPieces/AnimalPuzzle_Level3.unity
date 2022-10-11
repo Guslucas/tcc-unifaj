@@ -1483,7 +1483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8337556312297310054, guid: 8c1eccba18fc24f4f85a6f4453cb40d4, type: 3}
       propertyPath: NextLevelScene
-      value: AnimalPuzzle_LevelSelect
+      value: game
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c1eccba18fc24f4f85a6f4453cb40d4, type: 3}
