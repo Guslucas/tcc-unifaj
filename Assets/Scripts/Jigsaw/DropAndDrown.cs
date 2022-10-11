@@ -1,12 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using Random = UnityEngine.Random;
 
 public class DropAndDrown : MonoBehaviour
 {
+    [SerializeField] GameObject Victory;
     public GameObject SelectPiece;
     int OIL = 1;
+    public int PlacedPieces = 0;
+    public int pieceQuantity;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +21,7 @@ public class DropAndDrown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         if (Input.GetMouseButtonDown(0))
             {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
@@ -45,5 +51,23 @@ public class DropAndDrown : MonoBehaviour
             Vector3 MousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             SelectPiece.transform.position = new Vector3(MousePoint.x, MousePoint.y, 0);
         }
+
+        if (PlacedPieces == pieceQuantity)
+        {
+            FindObjectOfType<AudioManager>().PlayDelayed("victory");
+            GameManager.Instace.ShowEndingDialog();
+           // Victory.SetActive(true);
+
+            Time.timeScale = 1f;
+            PlacedPieces = 0;
+}
+
+    }
+ 
+   
+    internal void PieceFit()
+    {
+        PlacedPieces++;
+        FindObjectOfType<AudioManager>().Play("click");
     }
 }
