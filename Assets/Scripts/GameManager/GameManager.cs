@@ -18,7 +18,7 @@ public class GameManager : IPersistentSingleton<GameManager>
 
     private void Start()
     {
-
+        FindObjectOfType<AudioManager>().PlayDelayed("theme");
     }
 
     private void Update()
