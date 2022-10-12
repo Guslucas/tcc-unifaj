@@ -19,3 +19,10 @@ https://pixabay.com/sound-effects/success-fanfare-trumpets-6185/
 
 UI Items
 https://assetstore.unity.com/packages/2d/gui/icons/2d-casual-ui-hd-82080
+
+
+Theme Audio
+https://incompetech.com/music/royalty-free/music.html
+"Easy Lemon (60 second)" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
