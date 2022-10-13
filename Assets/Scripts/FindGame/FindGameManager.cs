@@ -25,7 +25,7 @@ public class FindGameManager : MonoBehaviour
         {
             Debug.Log("Encontrou todos os erros!!!");
             scoreText.text = "   Parabéns! você encontrou todos os erros!";
-            audioManager.Play("Win");
+            audioManager.Play("victory");
             GameManager.Instace.ShowEndingDialog();
         }        
     }
