@@ -611,5 +611,9 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7357934050551363687, guid: a688bd5a802d3c44aa7a0e7305f725c9, type: 3}
+      propertyPath: m_Text
+      value: Mundo Encaixe de Objetos
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a688bd5a802d3c44aa7a0e7305f725c9, type: 3}
