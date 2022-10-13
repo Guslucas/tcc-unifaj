@@ -1093,7 +1093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cenafase1: AnimalPuzzle_LevelSelect
   cenafase2: MEQBC
-  cenafase3: 
+  cenafase3: FindGame_LevelSelect
 --- !u!114 &1271174278
 MonoBehaviour:
   m_ObjectHideFlags: 0
