@@ -1470,20 +1470,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7754968860053169969, guid: eae5208052e275d419bc99f81787454a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754968860053169969, guid: eae5208052e275d419bc99f81787454a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754968860053169969, guid: eae5208052e275d419bc99f81787454a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 595.4003
+      value: 431.7277
       objectReference: {fileID: 0}
     - target: {fileID: 7754968860053169969, guid: eae5208052e275d419bc99f81787454a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 155.2487
+      value: 57.6297
       objectReference: {fileID: 0}
     - target: {fileID: 7754968860053169969, guid: eae5208052e275d419bc99f81787454a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -297.7052
+      value: -0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 7754968860053169969, guid: eae5208052e275d419bc99f81787454a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -77.62441
+      value: -78.780945
       objectReference: {fileID: 0}
     - target: {fileID: 7754968860301080259, guid: eae5208052e275d419bc99f81787454a, type: 3}
       propertyPath: m_Pivot.x
