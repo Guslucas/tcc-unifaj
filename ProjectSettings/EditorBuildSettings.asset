@@ -24,9 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MEQBC.unity
     guid: 6717aa72d6bd90441a53196d6a450511
   - enabled: 1
-    path: Assets/Scenes/MenuQBC.unity
-    guid: 9a01ab0ad4f71ce4aaa14751c5de85e9
-  - enabled: 1
     path: Assets/Scenes/AnimalPuzzle_LevelSelect.unity
     guid: 2463784029ea75f4c8a0ceca37f3314e
   - enabled: 1
