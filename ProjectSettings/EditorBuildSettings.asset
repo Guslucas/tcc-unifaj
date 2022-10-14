@@ -38,4 +38,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FitPieces/AnimalPuzzle_Level3.unity
     guid: 308876d753557fe44860f94c334bb389
+  - enabled: 1
+    path: Assets/Scenes/FindGame/FindGame_LevelSelect.unity
+    guid: c263c4e64dce982408e1038651944a50
+  - enabled: 1
+    path: Assets/Scenes/FindGame/FindGamePhase1.unity
+    guid: 002f299382d5ab34eaaae19abbcfbb0e
+  - enabled: 1
+    path: Assets/Scenes/FindGame/FindGamePhase2.unity
+    guid: 11696a0285bce1f45b95e0b30d91bbe1
   m_configObjects: {}
