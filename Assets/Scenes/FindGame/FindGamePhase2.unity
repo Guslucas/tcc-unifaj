@@ -1408,6 +1408,10 @@ PrefabInstance:
       propertyPath: inicial
       value: FindGame_LevelSelect
       objectReference: {fileID: 0}
+    - target: {fileID: 5211149220355171461, guid: c630b941579ab814681f1ec980babee7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5211149220355171462, guid: c630b941579ab814681f1ec980babee7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
