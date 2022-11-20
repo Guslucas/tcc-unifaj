@@ -29,9 +29,9 @@ public class PauseMenu : MonoBehaviour
     {
 
         //Editor Unity enquanto for editando deixa esse campo descomentado
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
         //jogo compilado, antes de compliar comenta linha a cima descomenta linha abaixo
-       // Application.Quit();
+        Application.Quit();
 
     }
 
