@@ -1492,7 +1492,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.995197
+  orthographic size: 4.9986925
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1878,18 +1878,6 @@ PrefabInstance:
     - target: {fileID: 4719528369446192643, guid: 142ee9d9a268b2d4d869499a92f6f235, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4719528369507151880, guid: 142ee9d9a268b2d4d869499a92f6f235, type: 3}
-      propertyPath: m_Color.b
-      value: 0.7058824
-      objectReference: {fileID: 0}
-    - target: {fileID: 4719528369507151880, guid: 142ee9d9a268b2d4d869499a92f6f235, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 4719528369507151880, guid: 142ee9d9a268b2d4d869499a92f6f235, type: 3}
-      propertyPath: m_Color.r
-      value: 0.3254902
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 142ee9d9a268b2d4d869499a92f6f235, type: 3}
